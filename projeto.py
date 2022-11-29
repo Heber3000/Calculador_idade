@@ -7,6 +7,7 @@ janela = tk.Tk()
 janela.geometry("680x780")
 janela.title("Calculador de Idade")
 
+
 nome = tk.Label(text="Nome:")
 nome.grid(column=0,row=1)
 ano = tk.Label(text="Ano")
@@ -31,7 +32,7 @@ def getInput():
 
     textArea = tk.Text(master=janela,height=10,width=25)
     textArea.grid(column=1,row=6)
-    resposta = f"Coé {dados.nome}!!!, Sua Idade é {dados.idade()} "
+    resposta = f"Coé {dados.nome}!!!, Sua Idade é {dados.idade()}\nUse produtos da AVON "
     textArea.insert(tk.END,resposta)
 
 botao = tk.Button(janela,text='Calcular Idade',command=getInput,bg="red")
